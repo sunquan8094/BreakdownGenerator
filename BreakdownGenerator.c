@@ -3,7 +3,6 @@
 #include <string.h>
 #include <time.h>
 #include "card.h"
-#include "hand.h"
 
 struct card* deck[38];
 
@@ -38,7 +37,7 @@ void init() {
 void deal(int n) {
     for (int l = 0; l < n; l++) {
         int merr = -1;
-        while (isInHand(merr) == 1 || merr == -1) {
+        while (isInHand(merr) == 0 || merr == -1) {
             merr = rand() % 38;
         }
         hand[l] = merr;
