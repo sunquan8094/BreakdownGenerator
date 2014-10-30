@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS=-ansi -Wall
+EXE=breakdown_generator
+
+all : $(EXE)
+
+$(EXE) : BreakdownGenerator.c card.h
+	$(CC) $(CFLAGS) -o $(EXE) BreakdownGenerator.c

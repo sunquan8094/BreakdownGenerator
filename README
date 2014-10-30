@@ -1,0 +1,13 @@
+BreakdownGenerator README
+
+I What is the BreakdownGenerator?
+The BreakdownGenerator is a programmatic implementation of the Arbiter Method, which, as described in the YouTube video at (https://www.youtube.com/watch?v=pokzcNGx-3Q), is a creative way to generate original metalcore breakdowns.
+
+II How does one run this program?
+You must firstly build the executable. To do this, open your terminal or command line, change the directory to the directory this file and all the other included files are in, and type “make -f BreakdownGeneratorMake”. If it doesn’t work properly, it will notify you, and it is probably because one or more of the files are missing. Don’t worry about the compiler warnings if they are printed; that just means that the compiler is doing its job. If you don’t get any errors (which you shouldn’t), the building of the executable should be done, and now you’re ready to run the program by typing the “breakdown_generator” if you’re on a PC, and “./breakdown_generator” if you’re on a Mac.
+
+III What do I do once I get the program running?
+Just enter an arbitrary integer between 1 and 38 inclusive. It will output a sequence of cards that correspond to specific elements of a metalcore breakdown. I’d watch the video referenced in the introduction. In case the program enters an infinite loop (i.e., it “freezes”), terminate the program.
+
+IV I have a question or issue. Who do I ask?
+Just email me at sunquan8094@gmail.com. I’ll try to answer your question and/or address your problem ASAP.
