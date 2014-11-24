@@ -65,12 +65,15 @@ int main() {
     srand(time(NULL));
     init();
     int num = 0;
+    int merr;
+    char ch;
     printf("Input a number.\n");
     while (num <= 0 || num > 38) {
-        scanf("%d", &num);
-        if (num <= 0 || num > 38) {
+        merr = scanf("%d", &num);
+        if (merr != 0 || num <= 0 || num > 38) {
             printf("Invalid input.\n");
         }
+        while ((ch = getchar()) != '\n');
     }
     deal(num);
     for (int m = 0; m < count; m++) {
